@@ -1,0 +1,20 @@
+---
+title: "Group 10 UCSB domestic grad enrollment"
+author: "Devin Ngo & Pol Carbó Mestre"
+date: "11/16/2021"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+```
+
+```{r read in data, echo=F}
+ucsb_grad <- read_csv(here("data","ucsb_grad_data.csv"))
+```
+

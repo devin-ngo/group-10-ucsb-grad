@@ -8,7 +8,7 @@ editor_options:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
 
 library(tidyverse)
 library(here)
@@ -24,6 +24,9 @@ ggplot(data = ucsb_grad) +
                y = domestic_enrollment,
                fill = ethnicity), position = "fill") +
   labs(x = "Year",
-       y = "Proportion of Domestic Enrollment")
+       y = "Proportion of Domestic Enrollment",
+       title = "UCSB graduate enrollment",
+       caption = "Figure 1. Proportion of domestic enrollment from 2008 to 2019 by ethnicity.") +
+  theme_minimal()
 ```
 
